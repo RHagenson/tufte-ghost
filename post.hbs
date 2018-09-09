@@ -21,9 +21,9 @@
         <header class="post-header">
             <h1 class="post-title">{{title}}</h1>
             <p class="subtitle">
-                {{#if image}}
+                {{#if feature_image}}
                 <figure class="author-image">
-                    <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+                    <a class="img" href="{{url}}" style="background-image: url({{img_url feature_image}})"><span class="hidden">{{name}}'s Picture</span></a>
                 </figure>
                 {{/if}}
                 {{author}}
@@ -42,9 +42,9 @@
         {{! Everything inside the #author tags pulls data from the author }}
         {{#author}}
             <div class="author">
-                {{#if image}}
+                {{#if profile_image}}
                     <figure class="author-image">
-                        <div class="img" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></div>
+                        <div class="img" style="background-image: url({{img_url profile_image}})"><span class="hidden">{{name}}'s Picture</span></div>
                     </figure>
                 {{/if}}
                 <p class="subtitle"><a href="{{url}}">{{name}}</a></p>
