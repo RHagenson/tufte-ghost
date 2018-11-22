@@ -501,14 +501,14 @@ body.nav-opened .nav {
 
 .post-footer .author {
     width: 70%;
+    float: left;
 }
 
 .post-footer .share {
-    position: absolute;
+    float: right;
     top: 6rem;
     right: 12.5%;
     width: 30%;
-    text-align: right;
 }
 
 .post-footer .share a {
