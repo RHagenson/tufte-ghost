@@ -18,10 +18,14 @@
 */
 
 
-/* ==========================================================================
-   1. Icons - Sets up the icon font and respective classes
-   ========================================================================== */
+/*
+==========================================================================
+1. Icons - Sets up the icon font and respective classes
+==========================================================================
+*/
 
+@charset "UTF-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/tufte-css/1.4/tufte.css");
 
 /* Import the font file with the icons in it */
 
@@ -90,316 +94,11 @@
 }
 
 
-/* ==========================================================================
-   2. Tufte CSS - applies the style specified by Tufte CSS - http://www.daveliepmann.com/tufte-css/
-   ========================================================================== */
-
-@font-face {
-    font-family: ETBembo;
-    src: url("../fonts/ETBembo-RomanLF.ttf?v=1");
-}
-
-@font-face {
-    font-family: ETBembo;
-    src: url("../fonts/ETBembo-DisplayItalic.ttf?v=1");
-    font-weight: normal;
-    font-style: italic;
-}
-
-html {
-    font-size: 15px;
-}
-
-body {
-    width: 87.5%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 12.5%;
-    font-family: ETBembo, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    background-color: #fffff8;
-    color: #111;
-    max-width: 1400px;
-    counter-reset: sidenote-counter;
-}
-
-h1 {
-    font-weight: 400;
-    margin-top: 4rem;
-    margin-bottom: 1.5rem;
-    font-size: 3.2rem;
-    line-height: 1;
-}
-
-h2 {
-    font-style: italic;
-    font-weight: 400;
-    margin-top: 2.1rem;
-    margin-bottom: 0;
-    font-size: 2.2rem;
-    line-height: 1;
-    padding-top: 2rem;
-}
-
-h3 {
-    font-style: italic;
-    font-weight: 400;
-    font-size: 1.7rem;
-    margin-top: 2rem;
-    margin-bottom: 0;
-    line-height: 1;
-}
-
-p.subtitle {
-    font-style: italic;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-    display: block;
-    line-height: 1;
-}
-
-table {
-    width: 80%;
-    font-size: 1.2rem;
-    line-height: 1.4;
-    margin: 1.4rem 1%;
-    border-collapse: separate;
-    border-spacing: 0 5px;
-    -webkit-font-feature-settings: 'tnum';
-    /* This is technically redundant */
-    -moz-font-feature-settings: 'tnum';
-    -ms-font-feature-settings: 'tnum';
-}
-
-thead th {
-    border-bottom: 1px solid #AAAAAA;
-    font-weight: 400;
-    border-collapse: separate;
-    border-spacing: 5px 5px;
-}
-
-td.text {
-    text-align: left;
-}
-
-span.table-label {
-    padding-top: 8px;
-}
-
-
-/* to maintain height relative to table header row */
-
-table.booktabs {
-    width: auto;
-    margin: 0 auto;
-    border-spacing: 0px;
-    border-top: 2px solid #333333;
-    border-bottom: 2px solid #333333;
-}
-
-.booktabs th {
-    border-bottom: 1px solid #333333;
-    padding: 0.65ex 0.5em 0.4ex 0.5em;
-    font-weight: normal;
-    text-align: center;
-}
-
-.booktabs th.cmid {
-    border-bottom: 1px solid #666666;
-}
-
-.booktabs th.nocmid {
-    border-bottom: none;
-}
-
-.booktabs tbody tr:first-child td {
-    padding-top: 0.65ex;
-}
-
-
-/* add space between thead row and tbody */
-
-.booktabs td {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    text-align: left;
-}
-
-.booktabs caption {
-    font-size: 90%;
-    text-align: left;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1ex;
-    caption-side: top;
-}
-
-.booktabs tbody tr td.l {
-    text-align: left !important;
-}
-
-.booktabs tbody tr td.c {
-    text-align: center !important;
-}
-
-.booktabs tbody tr td.r {
-    text-align: right !important;
-}
-
-table {
-    width: 98%;
-    text-align: right;
-    font-size: 1.2rem;
-    line-height: 1.4;
-    margin: 1.4rem 1%;
-    border-collapse: separate;
-    border-spacing: 0 5px;
-    -webkit-font-feature-settings: 'tnum';
-    /* This is technically redundant */
-    -moz-font-feature-settings: 'tnum';
-    -ms-font-feature-settings: 'tnum';
-}
-
-thead th {
-    border-bottom: 1px solid #AAAAAA;
-    font-weight: 400;
-    border-collapse: separate;
-    border-spacing: 5px 5px;
-}
-
-article {
-    position: relative;
-    padding: 5rem 0rem;
-}
-
-section {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-p,
-ol,
-ul {
-    font-size: 1.4rem;
-}
-
-p {
-    line-height: 2rem;
-    margin-top: 1.4rem;
-    margin-bottom: 1.4rem;
-    padding-right: 0;
-    vertical-align: baseline;
-}
-
-blockquote p {
-    font-size: 1.1rem;
-    width: 50%;
-}
-
-blockquote footer {
-    width: 50%;
-    text-align: right;
-}
-
-ul {
-    width: 45%;
-    -webkit-padding-start: 5%;
-    -webkit-padding-end: 5%;
-    list-style-type: none;
-}
-
-li {
-    padding: 0.5rem 0;
-}
-
-figure {
-    max-width: 55%;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    margin-bottom: 3em;
-}
-
-figcaption {
-    float: right;
-    clear: right;
-    margin-right: -48%;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 1.0rem;
-    line-height: 1.6;
-    vertical-align: baseline;
-    position: relative;
-}
-
-figure.fullwidth figcaption {
-    margin-right: 24%;
-}
-
-a {
-    color: #111;
-    text-decoration: none;
-    border-bottom: 1px solid #777;
-    padding-bottom: 1px;
-}
-
-img {
-    max-width: 100%;
-}
-
-p,
-footer,
-div.table-wrapper {
-    width: 55%;
-}
-
-@media screen and (max-width: 760px) {
-    p,
-    footer {
-        width: 90%;
-    }
-    ul {
-        width: 85%;
-    }
-    figure {
-        max-width: 90%;
-    }
-    figcaption,
-    figure.fullwidth figcaption {
-        margin-right: 0%;
-    }
-    blockquote p,
-    blockquote footer {
-        width: 90%;
-    }
-}
-
-code {
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 1.125rem;
-    line-height: 1.6;
-}
-
-.fullwidth {
-    max-width: 90%;
-}
-
-h1 code,
-h2 code,
-h3 code {
-    font-size: 0.80em;
-}
-
-.footnote code {
-    font-size: 1rem;
-}
-
-pre {
-    width: 52.5%;
-    padding-left: 2.5%;
-    overflow-x: scroll;
-}
-
+/*
+==========================================================================
+2. Tufte CSS - applies the style specified by Tufte CSS - http://www.daveliepmann.com/tufte-css/
+==========================================================================
+*/
 
 /* ==========================================================================
    3. General - Setting up some base styles
@@ -456,9 +155,11 @@ hr {
 }
 
 
-/* ==========================================================================
-   5. General - The main styles for the the theme
-   ========================================================================== */
+/*
+==========================================================================
+5. General - The main styles for the the theme
+==========================================================================
+*/
 
 .site-wrapper {
     position: relative;
@@ -777,9 +478,11 @@ body.nav-opened .nav {
 }
 
 
-/* ==========================================================================
-   6. Single Post - When you click on an individual post
-   ========================================================================== */
+/*
+==========================================================================
+6. Single Post - When you click on an individual post
+==========================================================================
+*/
 
 .post-footer {
     position: relative;
@@ -898,9 +601,11 @@ a[rel=footnote] {
 }
 
 
-/* ==========================================================================
-   7. Author profile
-   ========================================================================== */
+/*
+==========================================================================
+7. Author profile
+==========================================================================
+*/
 
 .author-image {
     width: 160px;
@@ -924,9 +629,11 @@ a[rel=footnote] {
 }
 
 
-/* ==========================================================================
-   8. Pagination - Tools to let you flick between pages
-   ========================================================================== */
+/*
+==========================================================================
+8. Pagination - Tools to let you flick between pages
+==========================================================================
+*/
 
 .pagination {
     position: relative;
@@ -964,9 +671,11 @@ a[rel=footnote] {
 }
 
 
-/* ==========================================================================
-   9. Footer - The bottom of every page
-   ========================================================================== */
+/*
+==========================================================================
+9. Footer - The bottom of every page
+==========================================================================
+*/
 
 .site-footer {
     position: relative;
@@ -1031,9 +740,11 @@ a[rel=footnote] {
 }
 
 
-/* ==========================================================================
-   10. JS Styles - Styles that get added if JavaScript is enabled
-   ========================================================================== */
+/*
+==========================================================================
+10. JS Styles - Styles that get added if JavaScript is enabled
+==========================================================================
+*/
 
 body.js .table-caption {
     float: right;
